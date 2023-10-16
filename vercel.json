@@ -1,3 +1,4 @@
 {
+    "outputDirectory": ".",
     "buildCommand": "ts-node scripts/build.ts"
 }

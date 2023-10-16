@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "newLine": "lf",
         "target": "ESNext",
         "moduleResolution": "NodeNext"
     }
