@@ -1,7 +1,7 @@
 {
     "scripts": {
         "build": "bun scripts/build.ts",
-        "runtime": "bun-vercel ./api/webhook.ts"
+        "runtime": "bun-vercel ./src/webhook.ts"
     },
     "dependencies": {
         "grammy": "^1.19.2"
