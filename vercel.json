@@ -1,4 +1,4 @@
 {
     "outputDirectory": ".",
-    "buildCommand": "ts-node scripts/build.ts"
+    "buildCommand": "npx ts-node scripts/build.ts"
 }
