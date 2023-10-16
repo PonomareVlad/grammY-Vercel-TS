@@ -1,9 +1,6 @@
-import { bot } from '../src/bot'
+import { bot } from '../src/bot.ts'
 
-const {
-    VERCEL_URL: host,
-    // set your webhook address or use default Vercel deployment url
-    WEBHOOK: webhook = `https://${host}/api/webhook`,
-} = process.env
+const webhook = Deno.env.get('WEBHOOK') ||
+    `https://${Deno.env.get('VERCEL_URL')}/api/webhook`
 
 void bot.api.setWebhook(webhook)

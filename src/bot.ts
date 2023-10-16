@@ -1,11 +1,7 @@
-import { Bot } from 'grammy'
-
-const {
-    TELEGRAM_BOT_TOKEN: token = '',
-} = process.env
+import { Bot } from './deps.deno.ts'
 
 // Set your token in the vercel environment variable
-export const bot = new Bot(token)
+export const bot = new Bot(Deno.env.get('BOT_TOKEN') || '')
 
 // attach all middleware
 bot.on('message', async ctx => {

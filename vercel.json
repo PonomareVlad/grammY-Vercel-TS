@@ -1,5 +1,9 @@
 {
     "outputDirectory": ".",
-    "installCommand": "npm i --omit=dev",
-    "buildCommand": "npx ts-node scripts/build.ts"
+    "buildCommand": "deno run scripts/build.ts",
+    "functions": {
+        "api/**/*.[jt]s": {
+            "runtime": "vercel-deno@3.0.4"
+        }
+    }
 }
