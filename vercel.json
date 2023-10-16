@@ -1,5 +1,5 @@
 {
     "outputDirectory": ".",
-    "installCommand": "npm i",
-    "buildCommand": "bun-vercel ./api/webhook.ts"
+    "installCommand": "bun install",
+    "buildCommand": "bun run build && bun run runtime"
 }
