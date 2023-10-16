@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "grammy": "^1.19.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.6",
+    "bun-vercel": "^1.0.0-alpha.5",
+    "typescript": "^5.2.2"
+  }
+}
