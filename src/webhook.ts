@@ -1,23 +1,12 @@
 import { bot } from './bot'
-import type { Server } from 'bun'
 import { webhookCallback } from 'grammy'
 
-// webhookCallback will make sure that the correct middleware(listener) function is called
 export default {
-    fetch: async (request: Request) => {
-        try {
-            request.json = async function() {
-                return JSON.parse(atob(await this.text()))
-            }
-            console.debug(await request.json())
-        } catch (e) {
-            console.error(e)
+    fetch: (request: Request) => {
+        request.json = async function() {
+            return JSON.parse(atob(await this.text()))
         }
-        return new Response('ok', {
-            status: 200,
-            headers: {
-                'Content-Type': 'text/plain;charset=utf-8',
-            },
-        })
+        // webhookCallback will make sure that the correct middleware(listener) function is called
+        return webhookCallback(bot, 'std/http')(request)
     },
 }
