@@ -1,11 +1,5 @@
 {
     "outputDirectory": ".",
     "installCommand": "bun install",
-    "buildCommand": "bun run build && bun run runtime",
-    "rewrites": [
-        {
-            "source": "/api/webhook",
-            "destination": "/App"
-        }
-    ]
+    "buildCommand": "bun run build && bun run runtime"
 }
