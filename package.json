@@ -1,13 +1,14 @@
 {
     "scripts": {
         "build": "bun scripts/build.ts",
-        "runtime": "bun-vercel ./src/webhook.ts"
+        "runtime": "bun-vercel ./src/test.ts"
     },
     "dependencies": {
         "grammy": "^1.19.2"
     },
     "devDependencies": {
         "@types/node": "^20.8.6",
+        "bun": "^1.0.6",
         "bun-vercel": "^1.0.0-alpha.5",
         "typescript": "^5.2.2"
     }
