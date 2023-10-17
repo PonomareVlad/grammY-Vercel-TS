@@ -1,4 +1,4 @@
-import { Bot } from 'grammy'
+import { Bot } from 'grammy/web'
 
 const {
     BOT_TOKEN: token = '',
