@@ -7,6 +7,6 @@
         "grammy": "^1.19.2"
     },
     "devDependencies": {
-        "bun-vercel": "1.0.0-alpha.5",
+        "bun-vercel": "1.0.0-alpha.5"
     }
 }
