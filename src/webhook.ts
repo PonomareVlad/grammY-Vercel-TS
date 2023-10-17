@@ -6,7 +6,7 @@ import { webhookCallback } from 'grammy'
 export default {
     fetch: async (request: Request) => {
         try {
-            console.debug(await request.json())
+            console.debug(await request.text())
         } catch (e) {
             console.error(e)
         }
