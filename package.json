@@ -9,6 +9,7 @@
     "devDependencies": {
         "@types/node": "^20.8.6",
         "bun": "^1.0.6",
-        "bun-vercel": "1.0.0-alpha.5"
+        "bun-vercel": "1.0.0-alpha.5",
+        "typescript": "^5.2.2"
     }
 }
