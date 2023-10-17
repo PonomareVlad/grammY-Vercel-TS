@@ -5,7 +5,11 @@ import { webhookCallback } from 'grammy'
 // webhookCallback will make sure that the correct middleware(listener) function is called
 export default {
     fetch: async (request: Request) => {
-        console.debug(await request.json())
+        try {
+            console.debug(await request.json())
+        } catch (e) {
+            console.error(e)
+        }
         return new Response('ok', {
             status: 200,
             headers: {
