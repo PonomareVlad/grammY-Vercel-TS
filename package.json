@@ -1,5 +1,4 @@
 {
-    "type": "module",
     "dependencies": {
         "grammy": "^1.19.2",
         "next": "^14.0.1"
