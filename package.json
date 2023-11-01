@@ -1,9 +1,11 @@
 {
   "dependencies": {
-    "grammy": "^1.19.2"
+    "grammy": "^1.19.2",
+    "next": "^14.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.8.6",
+    "@types/react": "18.2.33",
     "typescript": "^5.2.2"
   }
 }
